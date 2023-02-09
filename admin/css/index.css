@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,500;1,400&family=Quicksand&family=Rajdhani:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    display:none;
+}
+/*login page*/
+.login-form{
+    width:30%;
+    height:260px;
+    margin-left:35%;
+    margin-top:200px;
+    border-radius:5px;
+    background-color: #FFFFFF;
+    position:absolute;
+    z-index:4;
+}
+.login-form input[type=text], .login-form input[type=password]{
+    width:70%;
+    margin-left:15%;
+    height:35px;
+    border:0;
+    margin-top:20px;
+    border:1px solid rgb(200,200,200);
+    padding-left:5px;
+}
+.login-form input[type=button], .login-form input[type=submit]{
+    height:40px;
+    /* background-color: rgb(0,100,0); */
+    background-color: blue;
+    border:0;
+    color:#FFFFFF;
+    width:30%;
+    margin-left:56%;
+    margin-top:10px;
+    cursor:pointer;
+}
+.line{
+    width:100%;
+    height:4px;
+    background:linear-gradient(to right, blue, orange);
+}
+.login-wrapper .fa{
+    margin-left:2%;
+    margin-top:30px;
+    color:blue;
+    font-size:18px;
+}
+#blurr-back, #blurr-back-update{
+    position:absolute;
+    width:100%;
+    height:100vh;
+    background:#000;
+    opacity: 0.8;
+    z-index:3;
+    display: none;
+}
+#login-wrapper{
+    display: none;
+}
+.login-form span{
+    margin-left:15%;
+    color:blue;
+}
+.login-form p{
+    margin-left:15%;
+    margin-top:10px;
+
+}
+.adminlogin-wrapper .login-form input[type=text],.adminlogin-wrapper .login-form input[type=password]{
+    background-color: #222;
+    border:1px solid #000;
+    color:#FFFFFF;
+    height:35px;
+}
+.adminlogin-wrapper .login-form input[type=submit], #adminsign .login-form input[type=submit]{
+    background-color: orange;
+    color:#000;
+}
+#adminsign .login-form input[type=text], #adminsign .login-form input[type=password]{
+    background: #222;
+    border:1px solid #000;
+    color:#FFFFFF;
+}
+#adminsign .login-form{
+    margin-top:20px;
+    width:30%;
+    margin-left:0px;
+}
+.adminlogin-wrapper .login-form span{
+    margin-top:20px;
+    cursor:pointer;
+    color:orange;
+}
+#adminsign .login-form span{
+    margin-top:20px;
+    cursor:pointer;
+    color:orange;
+}
+#adminlog{
+    display:block;
+}
+#adminsign{
+    display:none;
+}
+#adminsign textarea{
+    background-color: #222;
+    border:1px solid #111;
+    height:150px;
+    width:71%;
+    margin-top:30px;
+    color:#FFFFFF;
+    padding-left: 3px;
+    margin-left:15%;
+}
+#adminsign .login-form input[type=submit]{
+    margin-left:15%;
+    width:50%;
+}
+.login-form span:hover, #adminsign .login-form span:hover{
+    color:#FFFFFF;
+}
+#companyresult{
+    height:20px;
+}
+/*student home*/
+.student-wrap{
+    display:flex;
+}
+.student-navigation{
+    width:15%;
+    height: 100vh;
+    background-color:#000;
+}
+.student-panel{
+    width:85%;
+    height:100vh;
+}
+.login-form .error{
+    color:red;
+}
+.student-navigation ul{
+    margin-top:50px;
+}
+.student-navigation ul li{
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:15px;
+    padding:30px 0px 2px 5%;
+    border-bottom:1px solid rgb(180, 180, 180);
+}
+.student-navigation ul li:last-child{
+    border-bottom:0px;
+}
+.student-navigation ul li a{
+    cursor:pointer;
+    color:rgb(180,180,180);
+}
+.student-navigation ul li a:hover{
+    text-decoration: none;
+}
+.student-navigation .fa{
+    margin-right:3px;
+}
+.title-bar{
+ height:50px;
+ width:100%;
+ box-shadow: 10px 10px 10px rgb(200,200,200);
+}
+.title-bar h4{
+    margin-left:2%;
+    padding-top: 15px;
+    font-size: 18px;
+}
+.title-bar span{
+    color:blue;
+}
+.post-home{
+    width:100%;
+    display:flex;
+}
+/*post*/
+#attachment{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    text-align: center;
+    margin-top:10px;
+}
+#attachment .view-card{
+    width:23%;
+    margin-left:1%;
+    height:fit-content;
+    padding-bottom: 10px;
+    border:1px solid rgb(230,230,230);
+    margin-bottom: 15px;
+    cursor: pointer;
+    text-align: left;
+    transition:0.4s;
+}
+#attachment .view-card:hover{
+    box-shadow: 0px 0px 10px blue;
+}
+.post-title, .view-card h3{
+    font-size:28px;
+    margin-left:5%;
+    margin-top:4px;
+    color:rgb(39, 146, 39);
+}
+.view-card h3{
+    color:rgb(180,180,180);
+    font-size: 18px;
+}
+.view-card h3 span{
+    color:blue;
+    margin-right: 5px;
+}
+.description{
+    margin-left:5%;
+    margin-top:4px;
+    font-size:16px;
+}
+.view-card button{
+    background: linear-gradient(to right, rgb(39, 146, 39), rgb(0,100,0));
+    color:#FFFFFF;
+    text-align: center;
+    margin-left:5%;
+    width:20%;
+    height:30px;
+    cursor:pointer;
+    border:0px;
+    border-radius:3px;
+    margin-top:10px;
+}
+.the-button{
+    width:100%;
+    text-align: right;
+    height:fit-content;
+    margin-top:25px;
+}
+.the-button button,
+#new-post input[type=button],
+#new-post-update input[type=button]{
+    width:10%;
+    height:40px;
+    color:#FFFFFF;
+    border: 0px;
+    border-radius:5px;
+    background-color: blue;
+    font-weight:bold;
+    margin-right:3%;
+    cursor:pointer;
+}
+#new-post input[type=button],
+#new-post-update input[type=button]{
+    width:15%;
+    margin-left:2%;
+    margin-top:15px;
+}
+#new-post p,
+#new-post-update p{
+    margin-left:2%;
+    margin-top:15px;
+}
+#new-post, 
+#new-post-update{
+    position:absolute;
+    height:500px;
+    margin-top:50px;
+    padding-bottom:30px;
+    width:60%;
+    margin-left:20%;
+    z-index:4;
+    display:none;
+    background-color: #FFFFFF;
+    border-radius:5px;
+    box-shadow:0px 0px 15px #000;
+}
+.post-top{
+    display:flex;
+    width:100%;
+}
+#new-post h4,
+#new-post-update h4{
+    padding:20px 0 2px 2%;
+    color:blue;
+    font-size:20px;
+}
+.post-top input, 
+#new-post textarea,
+#new-post-update textarea
+{
+    width:40%;
+    height:35px;
+    font-size:17px;
+    border:1px solid rgb(200,200,200);
+    margin-top:15px;
+    margin-left:2%;
+    padding-left:5px;
+}
+#new-post form,
+#new-post-update form
+{
+    width:100%;
+}
+#new-post textarea,
+#new-post-update textarea
+{
+    height:200px;
+    width:84%;
+}
+#frmApply{
+    display:none;
+}
+.action{
+    width:100%;
+    display:flex;
+}
+.profile_wrap{
+    display:flex;
+    margin-top:100px;
+}
+.profile_one{
+    width:40%;
+    margin-left:5%;
+}
+.profile_one form{
+    width:100%;
+}
+.profile_one form input[type=text]{
+    height:35px;
+    width:70%;
+    border:1px solid rgb(120,120,120);
+    border-radius:17.5px;
+    margin-bottom:30px;
+    padding-left:3%;
+}
+.profile_one input[type=submit]{
+    height:35px;
+    border:0px;
+    border-radius:17.5px;
+    width:40%;
+    background-color:blue;
+    cursor:pointer;
+    color:#FFFFFF;  
+}
+.profile_two .fa{
+    margin-left:4%;
+    font-size:300px;
+    color:blue;
+}
+.home_highlights{
+    display:flex;
+    width:90%;
+    text-align: center;
+    margin-top:50px;
+    margin-left:5%;
+}
+.highlight{
+    margin-top:40px;
+    width:30%;
+    margin-left:2%;
+    height:200px;
+    text-align: left;
+    box-shadow: 0px 0px 15px rgb(159, 184, 159);
+    background-color:rgb(38, 151, 62);
+    border-radius:3px;
+}
+.class_two{
+    background-color: rgb(51, 153, 131);
+    box-shadow: 0px 0px 15px rgb(152, 230, 213);
+}
+.highlight h2{
+    color:#FFFFFF;
+    font-size:26px;
+    margin-left:4%;
+    margin-top:15px;
+}
+.highlight h4{
+    color:#FFFFFF;
+    font-size:30px;
+    margin-left:4%;
+    margin-top:15px;
+}
+.product{
+    width:90%;
+    margin-left:5%;
+}
+.product_form{
+    width:40%;
+    margin-top:30px;
+    margin-left:5%;
+}
+.product_form textarea{
+    height:100px;
+}
+.category{
+    width:96%;
+    display:flex;
+    margin-top: 50px;
+    margin-left:2%;
+}
+.table_side{
+    width:60%;
+}
+.added_side{
+    width:40%;
+}
+.orders,.users{
+    margin-top:50px;
+    width:90%;
+    margin-left:5%;
+}
